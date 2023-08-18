@@ -1,0 +1,11 @@
+package com.romina.ideas.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.romina.ideas.models.User;
+
+public interface UserRepo extends CrudRepository<User, Long>{
+
+	User findByEmail(String email);
+
+}
